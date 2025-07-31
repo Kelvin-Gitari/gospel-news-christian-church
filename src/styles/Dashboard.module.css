@@ -1,0 +1,262 @@
+/* Dashboard.module.css (Updated to use index.css variables and mobile media queries) */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerText h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: hsl(var(--primary));
+    margin-bottom: 0.5rem;
+}
+
+.headerText p {
+    color: hsl(var(--muted-foreground));
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quickAddButton {
+    display: flex;
+    align-items: center;
+    background: var(--gradient-divine);
+    box-shadow: var(--shadow-divine);
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: hsl(var(--primary-foreground));
+    border-radius: var(--radius);
+}
+
+.plusIcon {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.shadowPeaceful {
+    box-shadow: var(--shadow-peaceful);
+    transition: box-shadow 0.3s ease;
+}
+
+.shadowPeaceful:hover {
+    box-shadow: var(--shadow-divine);
+}
+
+.statIcon {
+    height: 1rem;
+    width: 1rem;
+    color: hsl(var(--primary));
+}
+
+.statValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(var(--primary));
+}
+
+.statDescription {
+    font-size: 0.75rem;
+    color: hsl(var(--muted-foreground));
+    margin-top: 0.25rem;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .mainGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .colSpan2 {
+        grid-column: span 2;
+    }
+}
+
+.eventsList,
+.activitiesList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.eventItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(var(--secondary) / 0.5);
+    padding: 0.75rem;
+    border-radius: var(--radius);
+}
+
+.eventInfo h4 {
+    font-weight: 500;
+    color: hsl(var(--primary));
+}
+
+.eventInfo p {
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.eventActions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    text-transform: capitalize;
+}
+
+.service {
+    background-color: hsl(var(--primary) / 0.1);
+    color: hsl(var(--primary));
+}
+
+.ministry {
+    background-color: hsl(var(--gold) / 0.1);
+    color: hsl(var(--gold-dark));
+}
+
+.prayer {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+}
+
+.activityItem {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.activityDot {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 9999px;
+    background-color: hsl(var(--primary));
+}
+
+.activityText p:first-child {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: hsl(var(--primary));
+}
+
+.activityText p:last-child {
+    font-size: 0.75rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.quickGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.quickButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 5rem;
+    border-radius: var(--radius);
+    border: 1px solid hsl(var(--border));
+    background-color: hsla(var(--card) / 0.34);
+    box-shadow: var(--shadow-peaceful);
+    color: hsl(var(--primary));
+    font-size: 0.875rem;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.quickButton:hover {
+    box-shadow: var(--shadow-divine);
+    color: hsl(var(--primary-foreground));
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .headerText h1 {
+        font-size: 1.5rem;
+    }
+
+    .headerRight {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mainGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .colSpan2 {
+        grid-column: span 1;
+    }
+
+    .eventItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .activityItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quickGrid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .quickButton {
+        height: 4.5rem;
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .activityDot {
+        margin-top: 0;
+    }
+}

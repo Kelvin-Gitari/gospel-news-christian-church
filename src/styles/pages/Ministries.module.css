@@ -1,0 +1,122 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerText h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: hsl(var(--primary));
+}
+
+.headerText p {
+    color: hsl(var(--muted-foreground));
+}
+
+.tabContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tabGrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ministryGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .ministryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .ministryGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    color: hsl(var(--primary));
+}
+
+.ministryMeta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: hsl(var(--foreground));
+}
+
+.ministryMetaIcon {
+    width: 1rem;
+    height: 1rem;
+    color: hsl(var(--primary));
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.eventCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+}
+
+.eventDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.eventTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.eventMinistry {
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.eventDate {
+    font-size: 0.875rem;
+}
+
+.createFormGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.createFormFull {
+    width: 100%;
+}
+
+.createFormGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

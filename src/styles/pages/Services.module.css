@@ -1,0 +1,122 @@
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageTitle {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.pageSubtitle {
+    color: var(--muted-foreground);
+}
+
+.addButton,
+.submitButton {
+    background: var(--gradient-divine);
+    box-shadow: var(--shadow-divine);
+    color: hsl(var(--primary-foreground));
+}
+
+.tabsRoot {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tabsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    /*gap: 1rem;*/
+}
+
+.tabContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cardGrid {
+    display: grid;
+    gap: 1rem;
+}
+
+.cardShadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.cardHeaderRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serviceTitle {
+    color: var(--primary);
+}
+
+.infoGrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    font-size: 0.875rem;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
+    color: var(--primary);
+}
+
+.iconSmall {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.footerRow,
+.eventRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.footerText {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formRow2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.formRow3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}

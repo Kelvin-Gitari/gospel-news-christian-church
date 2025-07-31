@@ -1,0 +1,63 @@
+
+.sidebarCard {
+    background-color: hsl(var(--card));
+    border-right: 1px solid hsl(var(--border));
+}
+
+/* Branding Section */
+.branding {
+    padding: 1rem;
+    border-bottom: 1px solid hsl(var(--border));
+}
+
+.brandingInner {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brandingIcon {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: hsl(var(--primary));
+}
+
+.brandingTitle {
+    font-weight: bold;
+    color: hsl(var(--primary));
+    font-size: 0.875rem; /* text-sm */
+}
+
+.brandingSubtitle {
+    font-size: 0.75rem; /* text-xs */
+    color: hsl(var(--muted-foreground));
+}
+
+/* Navigation Styling */
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.link:hover {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+}
+
+.activeLink {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    font-weight: 500;
+    box-shadow: var(--shadow-divine);
+}
+
+.icon {
+    height: 1rem;
+    width: 1rem;
+}

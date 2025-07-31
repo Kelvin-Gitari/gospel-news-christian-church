@@ -1,0 +1,193 @@
+:local(.title) {
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsl(var(--primary));
+}
+
+:local(.subtitle) {
+    color: hsl(var(--muted-foreground));
+}
+
+:local(.headerRow) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+:local(.buttonExport) {
+    background: var(--gradient-divine);
+    box-shadow: var(--shadow-divine);
+    color: hsl(var(--primary-foreground));
+    font-weight: 500;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+:local(.shadowPeaceful) {
+    box-shadow: var(--shadow-peaceful);
+    background: hsl(var(--card));
+    border-radius: var(--radius);
+    border: none;
+}
+
+:local(.gridCards) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    :local(.gridCards) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    :local(.gridCards) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+:local(.cardHeader) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    gap: 0.5rem;
+}
+
+:local(.reportTitle) {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+:local(.reportValue) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(var(--primary));
+}
+
+:local(.reportChange) {
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+:local(.iconPrimary) {
+    color: hsl(var(--primary));
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+:local(.iconLeft) {
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+:local(.iconSmall) {
+    width: 0.75rem;
+    height: 0.75rem;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+:local(.gridReports) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+@media (min-width: 1024px) {
+    :local(.gridReports) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+:local(.quickAccessButton) {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+:local(.recentReportBox) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+:local(.reportRecentTitle) {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: hsl(var(--foreground));
+}
+
+:local(.tabsList) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+:local(.textPrimary) {
+    color: hsl(var(--primary));
+}
+
+:local(.gridGenerate) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+@media (min-width: 1024px) {
+    :local(.gridGenerate) {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+:local(.generateContent) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+:local(.gridForm) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+:local(.generateActions) {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+:local(.reportCategory) {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: hsl(var(--primary));
+}
+
+:local(.availableReportButton) {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    color: hsl(var(--foreground));
+}

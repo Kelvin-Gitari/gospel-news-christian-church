@@ -1,0 +1,96 @@
+.selectTrigger {
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--radius);
+    border: 1px solid hsl(var(--input));
+    background-color: hsl(var(--background));
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: inherit;
+    outline: none;
+    ring-offset-color: hsl(var(--background));
+}
+.selectTrigger:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px hsl(var(--ring));
+}
+.selectTrigger:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.selectTrigger span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.selectIcon {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.5;
+}
+
+.scrollButton {
+    display: flex;
+    cursor: default;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+
+.selectContent {
+    z-index: 50;
+    max-height: 24rem;
+    min-width: 8rem;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: 1px solid hsl(var(--border));
+    background-color: hsl(var(--popover));
+    color: hsl(var(--popover-foreground));
+    box-shadow: var(--shadow-peaceful);
+}
+.viewport {
+    padding: 0.25rem;
+}
+
+.label {
+    padding: 0.375rem 0.5rem 0.375rem 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0.375rem 0.5rem 0.375rem 2rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    cursor: default;
+}
+.item:focus {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+}
+.item[data-disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.itemIndicator {
+    position: absolute;
+    left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.separator {
+    margin: 0.25rem 0;
+    height: 1px;
+    background-color: hsl(var(--muted));
+}

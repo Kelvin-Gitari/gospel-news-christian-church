@@ -1,0 +1,195 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.headerRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: hsl(var(--primary));
+}
+
+.subtitle {
+    color: hsl(var(--muted-foreground));
+}
+
+.newMessageButton {
+    background: var(--gradient-divine);
+    box-shadow: var(--shadow-divine);
+    color: hsl(var(--primary-foreground));
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tabsList {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tabContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.shadowPeaceful {
+    box-shadow: var(--shadow-peaceful);
+}
+
+.textPrimary {
+    color: hsl(var(--primary));
+}
+
+.messageList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.messageItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: 0.5rem;
+}
+
+.messageInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconWrapper {
+    padding: 0.5rem;
+    border-radius: 9999px;
+    background-color: hsl(var(--primary) / 0.1);
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
+    color: hsl(var(--primary));
+    margin-right: 0.5rem;
+}
+
+.messageSubject {
+    font-weight: 500;
+}
+
+.messageMeta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.messageMetaText {
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.composeGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .composeGrid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.composeMain {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cardContentSpacing {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.typeSelector {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttonRow {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.gradientDivine {
+    background: var(--gradient-divine);
+    box-shadow: var(--shadow-divine);
+    color: hsl(var(--primary-foreground));
+}
+
+.recipientsTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: hsl(var(--primary));
+}
+
+.recipientList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.groupItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.groupLabel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.groupCount {
+    color: hsl(var(--muted-foreground));
+}
+
+.totalSelected {
+    padding-top: 0.5rem;
+    border-top: 1px solid hsl(var(--border));
+}
+
+.totalSelectedText {
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.gridTwoCols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .gridTwoCols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

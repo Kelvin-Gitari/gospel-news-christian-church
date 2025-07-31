@@ -1,0 +1,130 @@
+
+/* Finance.module.css */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerText h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: hsl(var(--primary));
+}
+
+.headerText p {
+    color: hsl(var(--muted-foreground));
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+@media (min-width: 768px) {
+    .summaryGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.summaryAmount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(var(--primary));
+}
+
+.summaryAmountDestructive {
+    color: hsl(var(--destructive));
+}
+
+.summaryTrend {
+    font-size: 0.75rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.transactionCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+}
+
+.transactionDetails {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.transactionIconPositive {
+    background-color: hsl(var(--primary) / 0.1);
+    color: hsl(var(--primary));
+    padding: 0.5rem;
+    border-radius: 9999px;
+}
+
+.transactionIconNegative {
+    background-color: hsl(var(--destructive) / 0.1);
+    color: hsl(var(--destructive));
+    padding: 0.5rem;
+    border-radius: 9999px;
+}
+
+.transactionInfo p:first-child {
+    font-weight: 500;
+}
+
+.transactionInfo p:last-child {
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.transactionAmount {
+    font-weight: bold;
+}
+
+.amountPositive {
+    color: hsl(var(--primary));
+}
+
+.amountNegative {
+    color: hsl(var(--destructive));
+}
+
+.budgetCategory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.budgetProgressBar {
+    height: 0.5rem;
+    background-color: hsl(var(--secondary));
+    border-radius: 9999px;
+}
+
+.budgetProgress {
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: var(--gradient-divine);
+    transition: width 0.3s ease;
+}
+
+.budgetStats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}

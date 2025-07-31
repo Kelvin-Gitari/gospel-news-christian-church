@@ -1,0 +1,44 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.625rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.default {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+}
+
+.default:hover {
+    background-color: hsl(var(--primary) / 0.8);
+}
+
+.secondary {
+    background-color: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+}
+
+.secondary:hover {
+    background-color: hsl(var(--secondary) / 0.8);
+}
+
+.destructive {
+    background-color: hsl(var(--destructive));
+    color: hsl(var(--destructive-foreground));
+}
+
+.destructive:hover {
+    background-color: hsl(var(--destructive) / 0.8);
+}
+
+.outline {
+    background-color: transparent;
+    color: hsl(var(--foreground));
+    border: 1px solid hsl(var(--border));
+}

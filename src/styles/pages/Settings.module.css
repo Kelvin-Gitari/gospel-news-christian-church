@@ -1,0 +1,138 @@
+.pageSpacing {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsl(var(--primary));
+}
+
+.subtitle {
+    color: hsl(var(--muted-foreground));
+}
+
+.buttonSave {
+    display: flex;
+    align-items: center;
+    background: var(--gradient-divine);
+    box-shadow: var(--shadow-divine);
+}
+
+.iconLeft {
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.tabsSpacing {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tabsList {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+.tabContentSpacing {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.shadowPeaceful {
+    box-shadow: var(--shadow-peaceful);
+}
+
+.cardTitleRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.iconCard {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.cardContentSpacing {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.gridTwoCol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.gridThreeCol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.spaceY6 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.spaceY3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.spaceY2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fontMedium {
+    font-weight: 500;
+}
+
+.textMuted {
+    color: hsl(var(--muted-foreground));
+    font-size: 0.875rem;
+}
+
+.roleCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: 0.5rem;
+    background-color: hsl(var(--card));
+}
+
+.pt4 {
+    padding-top: 1rem;
+}
+
+.wFull {
+    width: 100%;
+}

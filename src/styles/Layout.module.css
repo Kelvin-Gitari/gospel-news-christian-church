@@ -1,0 +1,148 @@
+.layoutContainer {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--gradient-peaceful);
+}
+
+.header {
+    height: 4rem;
+    background-color: hsl(var(--card));
+    border-bottom: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-peaceful);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.layoutMenu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logoImage {
+    height: 2rem; /* 32px */
+    width: 2rem;
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: hsl(var(--primary));
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    color: hsl(var(--muted-foreground));
+    margin: 0;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.userText {
+    text-align: right;
+}
+
+.userName {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.userRole {
+    font-size: 0.75rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.userAvatar {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 9999px;
+    background: var(--gradient-divine);
+    color: hsl(var(--primary-foreground));
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentWrapper {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.sidebarTrigger {
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: hsl(var(--primary));
+}
+
+@media (max-width: 767px) {
+    .layoutContainer {
+        flex-direction: column;
+    }
+
+    .header {
+        padding: 0 1rem;
+        height: 3.8rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        font-size: 0.625rem;
+    }
+
+    .userInfo {
+        gap: 0.5rem;
+    }
+
+    .userName {
+        font-size: 0.75rem;
+    }
+
+    .userRole {
+        font-size: 0.625rem;
+    }
+
+    .userAvatar {
+        height: 1.8rem;
+        width: 2rem;
+        font-size: 0.75rem;
+    }
+
+    .logoImage{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .sidebarTrigger {
+        font-size: 1.5rem;
+        padding: 0.25rem;
+    }
+
+    .contentWrapper {
+        padding: 1rem;
+    }
+
+    .layoutMenu {
+        gap: 0.5rem;
+    }
+}

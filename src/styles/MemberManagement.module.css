@@ -1,0 +1,340 @@
+.container {
+    padding: .4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.subtitle {
+    color: hsl(var(--muted-foreground));
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+}
+
+.addButton {
+    background: var(--gradient-divine);
+    box-shadow: var(--shadow-divine);
+    color: hsl(var(--primary-foreground));
+}
+
+.iconSmall {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.shadowPeaceful {
+    margin-top: 1rem;
+    box-shadow: var(--shadow-peaceful);
+}
+
+.searchContainer {
+    padding: 1rem;
+}
+
+.searchRow {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.secondaryButton {
+    background-color: hsl(var(--input));
+    color: hsl(var(--foreground));
+}
+
+@media (min-width: 640px) {
+    .searchRow {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.searchInputWrapper {
+    position: relative;
+    flex: 1;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    color: hsl(var(--muted-foreground));
+    pointer-events: none;
+}
+
+.searchInput {
+    width: 100%;
+    padding-left: 2.25rem;
+}
+
+.filterWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.selectFilter {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid hsl(var(--border));
+    background-color: hsl(var(--input));
+    color: inherit;
+}
+
+.memberGrid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: var(--shadow-peaceful);
+}
+
+@media (min-width: 768px) {
+    .memberGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .memberGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.memberCard:hover {
+    box-shadow: var(--shadow-divine);
+}
+
+.cardHeader {
+    padding-bottom: 0;
+}
+
+.memberHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.memberInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.avatarFallback {
+    /*background: var(--gradient-divine);*/
+    /*box-shadow: var(--shadow-divine);*/
+    /*color: hsl(var(--primary-foreground));*/
+    /*background-color: hsl(var(--muted));*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*font-weight: bold;*/
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.memberName {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.statusDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.active {
+    background-color: green;
+}
+
+.inactive {
+    background-color: gray;
+}
+
+.memberContent {
+    padding-top: 0;
+}
+
+.contactInfo {
+    margin-bottom: 1rem;
+}
+
+.contactRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: hsl(var(--muted-foreground));
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.ministryHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.ministriesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ministryBadge {
+    font-size: 0.75rem;
+    border-radius: 999px;
+    padding: 0.25rem 0.5rem;
+}
+
+.attendanceRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.attendanceLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.attendanceValue {
+    font-weight: bold;
+}
+
+.actionsRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.summaryGrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+    .summaryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .summaryGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.actionBtn {
+    background: transparent;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, .096);
+}
+
+.actionBtn:hover {
+    background: hsl(var(--primary) / 0.1);
+    color: hsl(var(--primary));
+}
+
+.summaryBlock {
+    text-align: center;
+    padding: 1rem;
+    background-color: hsl(var(--card));
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-peaceful);
+}
+
+.summaryValue {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.summaryLabel {
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.activeMembers {
+    color: green;
+    font-weight: bold;
+}
+
+.leadership {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.averageAttendance {
+    color: hsl(var(--primary));
+    font-weight: bold;
+}
+
+.bgGold {
+    background-color: gold !important;
+    color: black !important;
+}
+
+.bgPrimaryLight {
+    background-color: hsl(var(--primary) / 0.1) !important;
+    color: hsl(var(--primary)) !important;
+}
+
+.bgPrimaryGlow {
+    background-color: hsl(var(--primary) / 0.2) !important;
+    color: hsl(var(--primary)) !important;
+}
+
+.bgAccent {
+    background-color: hsl(var(--accent)) !important;
+    color: hsl(var(--accent-foreground)) !important;
+}
+
+.bgMuted {
+    background-color: hsl(var(--muted)) !important;
+    color: hsl(var(--muted-foreground)) !important;
+}
+
+.attendanceHigh {
+    color: green;
+}
+
+.attendanceMedium {
+    color: orange;
+}
+
+.attendanceLow {
+    color: red;
+}
